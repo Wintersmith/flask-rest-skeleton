@@ -23,15 +23,6 @@ from . import database
 # Register the blueprints.
 #
 from .api.v1.routes import api as v1
-#
-# Placeholders to provide as example how different versions of the api are registered
-#
-#from .api.v1_1.routes import api as v1_1
-#rom .api.v2.routes import api as v2
 
-webApp.register_blueprint( v1, url_prefix = '/v1' )
+webApp.register_blueprint( v1, url_prefix = '/api/v1' )
 #
-# Placeholders to provide as example how different versions of the api are registered
-#
-#webApp.register_blueprint( v1_1, url_prefix = '/v1.1' )
-#webApp.register_blueprint( v2, url_prefix = '/v2' )
