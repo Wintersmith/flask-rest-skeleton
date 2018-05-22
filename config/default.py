@@ -1,2 +1,3 @@
 SQLALCHEMY_DATABASE_URI = 'sqlite:////flaskSkeleton.db'
 SQLALCHEMY_TRACK_MODIFICATIONS = False
+DEBUG = True

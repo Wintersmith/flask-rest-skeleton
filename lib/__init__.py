@@ -15,7 +15,7 @@ if not os.getenv( 'APP_CONFIG_FILE', None ) is None:
 # Configure the DB
 #
 dbApp = SQLAlchemy( webApp )
-dbMigrate = Migraet( webApp, dbApp )
+dbMigrate = Migrate( webApp, dbApp )
 
 from . import database
 

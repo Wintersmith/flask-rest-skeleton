@@ -1,9 +1,14 @@
-from flask import Blueprint
+from flask.views import MethodView
 
-from appName.api import Common
-
+from lib.api import Common
 from . import api
 
-@api.route( '/info' )
-def info( self ):
-    pass
+from Core import Errors
+
+class Info( MethodView ):
+
+    def get( self ):
+        pass
+
+api.add_url_rule( '/info', view_func = Info.as_view( 'info' ) )
+
